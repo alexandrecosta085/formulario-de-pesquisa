@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel=stylesheet href="styles.css">
+  <title>Formulario de Pesquisa</title>
+</head>
+<body>
+  <h1 id="title">Sua Opinião é Importante para Nós!</h1>
+  <p id="description">Deixe seu feedback e nos ajude a oferecer o melhor serviço!</p>
+  <form id="survey-form">
+
+
+    <fieldset class="info">
+      <legend>INFORMAÇÕES PESSOAIS</legend>
+
+      <label id="name-label" for="name" >Digite seu nome:  
+        <input id="name" type="text" placeholder="Seu nome" required>
+      </label>
+
+      <label id="email-label" for="email" >Digite seu e-mail:  
+        <input id="email" type="email" placeholder="E-mail" required>
+      </label>
+
+      <label id="number-label" for="number" >Digite sua idade:
+        <input id="number" type="number" min="13" max="120" placeholder="Idade" required>
+      </label>
+
+    </fieldset>
+
+
+    <fieldset class="food-house">
+      <legend>Com que frequência você come fora de casa?</legend>
+      
+      <label for="dropdown">Frequência:
+
+      <select id="dropdown"> 
+            <option value="">Selecione uma opção:</option>
+            <option value="Daily">Diariamente</option>
+            <option value="times-a-week">Algumas vezes por semana</option>
+            <option value="once-a-week">1 vez por semana</option>
+            <option value="rarely">Raramente</option>
+      </select>
+
+      </label>
+
+
+    </fieldset>
+
+
+    <fieldset class="delivery">
+      <legend>Você costuma pedir comida por delivery?</legend>
+
+      <label for="yes"><input id="yes" type="radio" name="select" value="yes" checked >Sim</label>
+      <label for="no"><input id="no" type="radio" name="select" value="no">Não</label>
+
+
+    </fieldset>
+
+    <fieldset class="food">
+      <legend>Quais tipos de comida você costuma pedir no delivery? (Escolha quantos quiser)</legend>
+        <label for="pizza"><input id="pizza" type="checkbox" name="food" value="pizza"> Pizza</label>
+        <label for="hamburger"><input id="hamburger" type="checkbox" name="food" value="hamburger"> Hambúrguer</label>
+        <label for="sushi"><input id="sushi" type="checkbox" name="food" value="sushi"> Sushi</label>
+        <label for="chinesa"><input id="chinesa" type="checkbox" name="food" value="chinesa"> Chinesa</label>
+        <label for="mexicana"><input id="mexicana" type="checkbox" name="food" value="mexicana"> Mexicana</label>
+        <label for="brasileira"><input id="brasileira" type="checkbox" name="food" value="brasileira"> Brasileira</label>
+        <label for="massa"><input id="massa" type="checkbox" name="food" value="massas"> Massas</label>
+        <label for="salad"><input id="salad" type="checkbox" name="food" value="saladas"> Saladas</label>
+        <label for="doces"><input id="doces" type="checkbox" name="food" value="doces"> Doces e Sobremesas</label>
+    </fieldset>
+
+    <fieldset class="option">
+      <legend>Dê sua opinião</legend>
+
+      <label>
+        <textarea id="comments" name="comments" class="box" placeholder="Digite aqui sua opinião..." ></textarea>
+      </label>
+    </fieldset>
+
+
+    <button id="submit" type="submit">Enviar</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo geral */
+  body {
+    background: #004643;
+    color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  h1, p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Formulário */
+  form {
+    background: #001e1d;
+    color: #d1e0e7;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Fieldsets */
+  fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: -0.5px -0.5px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  }
+  
+  /* Labels e inputs */
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    max-width: 100%;
+  }
+  
+  /* Checkboxes e Radios */
+  .food,
+  .delivery {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .food label,
+  .delivery label {
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 80px;
+    resize: vertical;
+  }
+  
+  /* Botão de envio */
+  button {
+    background-color: #004643;
+    color: #d1e0e7;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #006d67;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    body {
+      max-width: 90%;
+    }
+  
+    label {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }
