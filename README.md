@@ -15,8 +15,7 @@ O design é responsivo e usa uma paleta de cores escura, agradável à leitura.
 
 ## 🖼️ Preview
 
-![Preview do Formulário](https://via.placeholder.com/600x400.png?text=Formul%C3%A1rio+de+Pesquisa)  
-> *(Substitua a imagem acima com um print real do projeto)*
+![Preview do Formulário](/img/print.png)  
 
 ## 🚀 Como usar
 
